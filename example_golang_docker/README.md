@@ -20,7 +20,7 @@ This directory offers a simple Dockerfile example. This example clone our sample
 In this tutorial, we will push our image into this repository.
 ### 2.3 Build the docker image locally
 As SDSC Expanse does not install Docker and provide `sudo` to users, you have to build the image on your local machine. Install [docker](https://docs.docker.com/engine/install/) if necessary.
-`docker built -t <your docker hub username>/<your dockerhub repo>:<tag> .`
+`docker build -t <your docker hub username>/<your dockerhub repo>:<tag> .`
 For example, 
 `docker build  -t caidaricky/expanse-uscdnt-golang:0.1.3 .`
 ### 2.4 Push the image to Docker Hub
