@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=spark-pi
 #SBATCH --partition=compute
-#SBATCH --account=sds193
+#SBATCH --account=csd939
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1

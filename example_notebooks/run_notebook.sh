@@ -5,7 +5,7 @@ SLURM_JOB_ID="$(squeue -u $LOGNAME |grep $HOSTNAME | awk '{print $1}')"
 cd "/scratch/${USER}/job_${SLURM_JOB_ID}"; 
 
 #copy notebook to scratch directory
-cp -r /home/magao/1_workspace/telescope_expanse_tutorial/* /scratch/${USER}/job_${SLURM_JOB_ID}/
+cp -r /home/${USER}/telescope_expanse_tutorial/* /scratch/${USER}/job_${SLURM_JOB_ID}/
 
 #load ucsdnt s3 key into the environment 
 source /expanse/lustre/projects/csd939/kmok/.ucsdnts3.key
