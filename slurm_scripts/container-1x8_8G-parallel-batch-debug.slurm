@@ -15,10 +15,10 @@ module load slurm
 module load cpu/0.15.4
 module load singularitypro
 
+SLURM_JOB_ID="$(squeue -u $LOGNAME |grep $HOSTNAME | awk '{print $1}')"
 JOB_OUTPUT_DIR=/expanse/lustre/projects/csd939/${USER}/golang_container_output
 mkdir -p $JOB_OUTPUT_DIR
 SCRATCH_DIR="/scratch/${USER}/job_${SLURM_JOB_ID}"
-mkdir -p ${SCRATCH_DIR}
 
 # Submit batch job
 singularity exec --env-file /expanse/lustre/projects/csd939/kmok/.ucsdnts3.env \
