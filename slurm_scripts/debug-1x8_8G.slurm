@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=spark-pi
 #SBATCH --partition=debug
-#SBATCH --account=<acct name>
+#SBATCH --account=<name>
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
