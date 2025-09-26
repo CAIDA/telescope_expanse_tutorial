@@ -9,7 +9,10 @@ module load cpu/0.15.4
 module load spark/3.2.1
 module load hadoop
 
-base_dir=/expanse/lustre/scratch/$USER/temp_project/spark-3.2.1
+SLURM_JOB_ID="$(squeue -u $LOGNAME |grep $HOSTNAME | awk '{print $1}')"
+
+# base_dir=/expanse/lustre/scratch/$USER/temp_project/spark-3.2.1
+base_dir="/scratch/${USER}/job_${SLURM_JOB_ID}/spark-3.2.1"
 
 if [ ! -d "$base_dir" ]; then
   mkdir -p "$base_dir"
