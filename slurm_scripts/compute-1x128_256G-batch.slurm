@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=spark-pi
 #SBATCH --partition=compute
-#SBATCH --account=csd939
+#SBATCH --account=sdp127
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
@@ -19,7 +19,7 @@ cd ${REPO_DIR}/slurm_scripts
 /bin/bash bootstrap_env.sh
 
 #load ucsdnt s3 key into the environment 
-source /expanse/lustre/projects/csd939/kmok/.ucsdnts3.key
+source /expanse/lustre/projects/sdp127/ktrinh3/.ucsdnts3.key
 
 # PYSPARK_PYTHON=./venv/bin/python 
 # PYSPARK_DRIVER_PYTHON=./venv/bin/python 
