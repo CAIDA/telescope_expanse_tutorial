@@ -2,6 +2,8 @@
 
 This repository contains tutorial materials for analyzing UCSD network telescope data on SDSC Expanse HPC. This tutorial was given at the GMI-AIMS-5 (AIMS 2025) workshop in June 2025, and is kept for historical purposes.
 
+[Slide stack](https://docs.google.com/presentation/d/12zuu9UmCb_CvWktqKovyBaHoVkjYnax4WyCa8UC5w84/edit?usp=drive_link)
+
 # Prerequisite 
  1. Register an account on [ACCESS-CI](https://access-ci.org) 
  2. Apply for allocation on [ACCESS-CI](https://access-ci.org) 
